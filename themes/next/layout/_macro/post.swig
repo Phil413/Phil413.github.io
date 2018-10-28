@@ -210,6 +210,7 @@
                  <span class="post-meta-item-text">{{__('post.visitors')}}&#58;</span>
                {% endif %}
                  <span class="leancloud-visitors-count"></span>
+                 <span>℃</span>
              </span>
           {% endif %}
 
@@ -333,6 +334,12 @@
     {#####################}
     {### END POST BODY ###}
     {#####################}
+
+    <div>
+      {% if not is_index %}
+      {% include 'passage-end-tag.swig' %}
+      {% endif %}
+    </div>
 
     {% if theme.wechat_subscriber.enabled and not is_index %}
       <div>

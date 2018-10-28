@@ -22,8 +22,12 @@
 </div>
 
 {% if theme.footer.powered %}
-  <div class="powered-by">{#
-  #}{{ __('footer.powered', '<a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a>') }}{#
+  <div class="powered-by">
+  <a class="theme-link" target="_blank" href="https://hexo.io">
+    <i class="fa fa-tag"></i> Hexo
+  </a>
+  {#
+  {{ __('footer.powered', '<a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a>') }}{#
 #}</div>
 {% endif %}
 
@@ -32,11 +36,15 @@
 {% endif %}
 
 {% if theme.footer.theme.enable %}
-  <div class="theme-info">{#
-  #}{{ __('footer.theme') }} &mdash; {#
-  #}<a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">{#
-    #}NexT.{{ theme.scheme }}{#
-  #}</a>{% if theme.footer.theme.version %} v{{ theme.version }}{% endif %}{#
+  <div class="theme-info">
+  <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next" rel="section">
+    <i class="fa fa-tag"></i> NexT
+  </a>
+  {#
+  {{ __('footer.theme') }} &mdash; 
+  <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">{#
+    NexT.{{ theme.scheme }}{#
+  </a>{% if theme.footer.theme.version %} v{{ theme.version }}{% endif %}{#
 #}</div>
 {% endif %}
 
