@@ -1,10 +1,10 @@
 ---
 title: LeetCode 1 题解
-categories: 
-	- Python
-	- LeetCode
+categories:
+    - Python
+    - LeetCode
 ---
-# LeetCode 1 题解
+# LeetCode 1 [Two Sum](https://leetcode.com/problems/two-sum) 题解
 ## 问题描述:
 > Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 > You may assume that each input would have exactly one solution, and you may not use the same element twice.
@@ -31,3 +31,4 @@ class Solution(object):
             existing_nums[num]=i
         return []
 ```
+
