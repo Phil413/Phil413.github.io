@@ -1,5 +1,5 @@
 ---
-title: LeetCode 1 题解
+title: LeetCode 1 Two Sum 题解
 categories:
     - Python
     - LeetCode
