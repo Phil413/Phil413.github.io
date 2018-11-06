@@ -1,5 +1,6 @@
 ---
 title: LeetCode 1 Two Sum 题解
+date: 2018-11-03
 categories:
     - Python
     - LeetCode
