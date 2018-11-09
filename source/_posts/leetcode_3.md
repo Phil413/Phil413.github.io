@@ -57,23 +57,38 @@ class Solution(object):
         num = 0
         begin = 0
         ascii_map = {}
-        for i in range(176):
-        	ascii_map[i] = -1
         for i in range(len(s)+1):
         	if i == len(s):
-        		if max_len < num - begin:
-        			max_len = num -begin
+        		max_len = max(max_len, num-begin)
         		break
-        	char_s = s[i]
-        	ascii_s = ord(char_s)
-    		if ascii_map[ascii_s] >= begin and num > ascii_map[ascii_s]:
-    			if max_len < num - begin:
-    				max_len = num - begin
-    			begin = ascii_map[ascii_s] + 1
-    			ascii_map[ascii_s] = num
-    		ascii_map[ascii_s] = num
-    		num += 1
-    		i += 1
+        	ascii_s = ord(s[i])
+        	if num > ascii_map.get(ascii_s, -1) >= begin:
+        		max_len = max(max_len, num-begin)
+        		begin = ascii_map[ascii_s] + 1
+        		ascii_map[ascii_s] = num
+        	ascii_map[ascii_s] = num
+        	num += 1
+        	i += 1
         return max_len
 ```
 
+2. 解2：
+
+    LeetCode 提交中 40ms 的实现
+
+    ```python
+    class Solution(object):
+        def lengthOfLongestSubstring(self, s):
+            """
+            :type s: str
+            :rtype: int
+            """
+            prevLetters, res, st = {}, 0, 0
+            for i, v in enumerate(s):
+                if v not in prevLetters or prevLetters[v] < st:
+                    res = max(res, i - st + 1)
+                else:
+                    st = prevLetters[v] + 1
+                prevLetters[v] = i
+            return res
+    ```
