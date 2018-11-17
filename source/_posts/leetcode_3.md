@@ -57,18 +57,16 @@ class Solution(object):
         num = 0
         begin = 0
         ascii_map = {}
-        for i in range(len(s)+1):
-        	if i == len(s):
+        for i in range(len(s)):
+        	char_s = s[i]
+        	if num > ascii_map.get(char_s, -1) >= begin:
         		max_len = max(max_len, num-begin)
-        		break
-        	ascii_s = ord(s[i])
-        	if num > ascii_map.get(ascii_s, -1) >= begin:
-        		max_len = max(max_len, num-begin)
-        		begin = ascii_map[ascii_s] + 1
-        		ascii_map[ascii_s] = num
-        	ascii_map[ascii_s] = num
+        		begin = ascii_map[char_s] + 1
+        		ascii_map[char_s] = num
+        	ascii_map[char_s] = num
         	num += 1
         	i += 1
+        max_len = max(max_len, num-begin)
         return max_len
 ```
 
