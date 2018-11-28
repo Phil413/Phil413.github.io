@@ -67,40 +67,41 @@ categories:
                 return (l[a/2-1]+l[a/2])/2.0
     ```
 
-3.解3: 
+3. 解3: 
 
-  二分查找实现
+    二分查找实现
 
-```python
-class Solution(object):
-    def findMedianSortedArrays(self, nums1, nums2):
-        """
-        :type nums1: List[int]
-        :type nums2: List[int]
-        :rtype: float
-        """
-        len_nums1 = len(nums1)
-        len_nums2 = len(nums2)
-        if len_nums1 > len_nums2:
-        	return self.findMedianSortedArrays(nums2, nums1)
+    ```python
+    class Solution(object):
+        def findMedianSortedArrays(self, nums1, nums2):
+            """
+            :type nums1: List[int]
+            :type nums2: List[int]
+            :rtype: float
+            """
+            len_nums1 = len(nums1)
+            len_nums2 = len(nums2)
+            if len_nums1 > len_nums2:
+            	return self.findMedianSortedArrays(nums2, nums1)
+    
+            half_len = len_nums1 + len_nums2
+            l = 0
+            r = len_nums1 * 2
+            while l <= r:
+            	nums1_cut = (l + r)//2
+            	nums2_cut = half_len - nums1_cut
+    
+            	l1 = float('-inf') if (nums1_cut == 0) else nums1[(nums1_cut-1)//2]
+            	l2 = float('-inf') if (nums2_cut == 0) else nums2[(nums2_cut-1)//2]
+            	r1 = float('inf') if (nums1_cut == len_nums1 * 2) else nums1[nums1_cut//2]
+            	r2 = float('inf') if (nums2_cut == len_nums2 * 2) else nums2[nums2_cut//2]
+    
+    	        if l1 > r2:
+    	        	r = nums1_cut - 1
+    	        elif l2 > r1:
+    	        	l = nums1_cut + 1
+    	        else:
+    	        	return (max(l1,l2) + min(r1, r2)) // 2
+    ```
 
-        half_len = len_nums1 + len_nums2
-        l = 0
-        r = len_nums1 * 2
-        while l <= r:
-        	nums1_cut = (l + r)//2
-        	nums2_cut = half_len - nums1_cut
-
-        	l1 = float('-inf') if (nums1_cut == 0) else nums1[(nums1_cut-1)//2]
-        	l2 = float('-inf') if (nums2_cut == 0) else nums2[(nums2_cut-1)//2]
-        	r1 = float('inf') if (nums1_cut == len_nums1 * 2) else nums1[nums1_cut//2]
-        	r2 = float('inf') if (nums2_cut == len_nums2 * 2) else nums2[nums2_cut//2]
-
-	        if l1 > r2:
-	        	r = nums1_cut - 1
-	        elif l2 > r1:
-	        	l = nums1_cut + 1
-	        else:
-	        	return (max(l1,l2) + min(r1, r2)) // 2
-```
 
