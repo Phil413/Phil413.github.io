@@ -2,7 +2,6 @@
 title: LeetCode 4 Median of Two Sorted Arrays 题解
 date: 2018-11-09
 categories:
-    - Python
     - LeetCode
 ---
 

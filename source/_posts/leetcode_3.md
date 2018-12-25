@@ -2,7 +2,6 @@
 title: LeetCode 3 Longest Substring Without Repeating Characters 题解
 date: 2018-11-08
 categories:
-  - Python
   - LeetCode
 ---
 
