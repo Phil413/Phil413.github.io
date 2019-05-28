@@ -1,9 +1,9 @@
+---
 title: Pyenv + Pipenv 使用
 date: 2019-05-28
 categories:
-
     - Python
-
+---
 # Pyenv + Pipenv 使用
 
 ## Pyenv 安装
