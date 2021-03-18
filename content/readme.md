@@ -1,5 +1,0 @@
----
-pin: true
----
-
-`Hello World!`
