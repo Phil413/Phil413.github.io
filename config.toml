@@ -1,7 +1,10 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "http://localhost:1313/"
+languageCode = "zh-cn"
+title = "Fennel's blog"
 theme = "github-style"
 lastmod = true
 [frontmatter]
   lastmod = ["lastmod", ":fileModTime", ":default"]
+[params]
+  description = "Fennel's blog"
+  author = "Fennel"

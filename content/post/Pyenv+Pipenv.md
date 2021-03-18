@@ -1,9 +1,9 @@
 ---
 title: "Pyenv + Pipenv 使用"
 date: 2019-05-28T18:48:56+08:00
-draft: true
-pin: true
+draft: false
 summary: "使用Pyenv与Pipenv管理python虚拟环境"
+tags: [python]
 ---
 # Pyenv + Pipenv 使用
 
