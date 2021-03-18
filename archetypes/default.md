@@ -2,10 +2,10 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: false
-author = ""
-keywords = []
-tags = []
-cover = ""
+author: "Fennel"
+keywords: []
+tags: []
+cover: ""
 summary: ""
 ---
 
