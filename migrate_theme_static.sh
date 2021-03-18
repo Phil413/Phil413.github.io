@@ -1,4 +1,4 @@
 #!/bin/sh
 
 cd `dirname $0`
-cp -rf ./theme_static ./theme/*/static
+cp -rvf ./theme_static/* ./themes/github-style/static/
