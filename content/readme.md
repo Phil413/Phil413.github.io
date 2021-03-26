@@ -1,23 +1,15 @@
 ---
 title: "README"
-data: 2021-03-26T16:02+08:00
+date: 2021-03-26T16:02+08:00
 ---
-
-## Skills
-
-- Python ( backend )
-- Unity ( learning )
-- C# ( learning )
-
-## Link
-
-- Email: [845552092@qq.com](mailto:845552092@qq.com)
-- GitHub: [Phil413](https://github.com/Phil413/)
-- Blog: [phil413](https://phil413.github.io/)
 
 ## About
 
-持续性混吃等死，间歇性踌躇满志。呆在四线城市的舒适圈时不时翻腾两下的咸鱼。
+不专业，不负责，瞎扯蛋
+
+持续性混吃等死，间歇性踌躇满志。
+
+呆在四线城市的舒适圈时不时翻腾两下的咸鱼。
 
 ### 关于编程
 
@@ -30,6 +22,18 @@ data: 2021-03-26T16:02+08:00
 ### 关于二次元
 
 最喜欢的动漫是《钢之炼金术师》，最喜欢的角色是《通灵王》的恐山安娜。不想学绘画的程序员不是好的打机人，买了数位板却一直吃灰，希望2021能坚持学习下去吧
+
+## Skills
+
+- Python ( backend )
+- Unity ( learning )
+- C# ( learning )
+
+## Link
+
+- Email: [845552092@qq.com](mailto:845552092@qq.com)
+- GitHub: [Phil413](https://github.com/Phil413/)
+- Blog: [phil413](https://phil413.github.io/)
 
 ## Build this site
 
