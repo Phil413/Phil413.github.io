@@ -17,12 +17,16 @@
     </item>
     
     <item>
-      <title></title>
+      <title>README</title>
       <link>https://phil413.github.io/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://phil413.github.io/readme/</guid>
-      <description>Hello World!</description>
+      <description>Skills  Python ( backend ) Unity ( learning ) C# ( learning )  Link  Email: 845552092@qq.com GitHub: Phil413 Blog: phil413  About 持续性混吃等死，间歇性踌躇满志。呆在四线城市的舒适圈时不时翻腾两下的咸鱼。
+关于编程 最喜欢的语言是Python，也是目前工作中使用的语言，主要使用Django开发后端。想要学习C#与Unity，但一直处于开始阶段。
+关系游戏 最喜欢的游戏是《空洞骑士》，目前在玩的游戏《怪物猎人世界》，最喜欢的角色是《伊苏8》的Dana（病名为娜），一直希望进入游戏相关行业却不知道该如何下手
+关于二次元 最喜欢的动漫是《钢之炼金术师》，最喜欢的角色是《通灵王》的恐山安娜。不想学绘画的程序员不是好的打机人，买了数位板却一直吃灰，希望2021能坚持学习下去吧
+Build this site  GitHub Pages Hugo github-style  </description>
     </item>
     
   </channel>
